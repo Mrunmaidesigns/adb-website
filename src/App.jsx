@@ -62,7 +62,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/adb-website">
       <div className="app">
         <ScrollToTop />
         <ScrollAnimation />

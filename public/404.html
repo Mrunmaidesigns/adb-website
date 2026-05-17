@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ADB Consulting LLP</title>
+  <script>
+    var path = window.location.pathname;
+    var base = '/adb-website/';
+    var redirect = base + 'index.html';
+    
+    if (path !== base && path !== base + 'index.html' && path !== '/') {
+      var routePath = path.replace(base, '/');
+      sessionStorage.setItem('redirectPath', routePath);
+    }
+    window.location.replace(redirect);
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
