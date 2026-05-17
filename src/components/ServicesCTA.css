@@ -1,0 +1,23 @@
+.services-cta {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-xl) 0;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.cta-content .heading-lg {
+  letter-spacing: -0.02em;
+}
+
+.cta-button {
+  font-size: 1rem;
+  padding: 1rem 2.25rem;
+}

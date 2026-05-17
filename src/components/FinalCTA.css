@@ -1,0 +1,62 @@
+.final-cta {
+  background-color: var(--color-primary);
+  padding: var(--spacing-xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-secondary) 100%);
+  opacity: 0.95;
+}
+
+.final-cta::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 35px,
+    rgba(255, 255, 255, 0.02) 35px,
+    rgba(255, 255, 255, 0.02) 36px
+  );
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--color-text-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.cta-content .heading-lg {
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.cta-subtext {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 50ch;
+}
+
+.cta-button {
+  font-size: 1rem;
+  padding: 1rem 2.25rem;
+}

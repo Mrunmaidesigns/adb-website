@@ -1,0 +1,55 @@
+.philosophy-section {
+  background-color: var(--color-primary);
+  padding: var(--spacing-xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.philosophy-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-secondary) 100%);
+  opacity: 0.95;
+}
+
+.philosophy-content {
+  position: relative;
+  z-index: 1;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-text-white);
+}
+
+.philosophy-content .section-label {
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+  justify-content: center;
+}
+
+.philosophy-content .heading-lg {
+  margin-bottom: var(--spacing-md);
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.philosophy-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--spacing-sm);
+}
+
+.philosophy-highlight {
+  font-size: 1.1875rem;
+  line-height: 1.6;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

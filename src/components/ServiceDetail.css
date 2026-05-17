@@ -1,0 +1,116 @@
+.service-detail {
+  padding: 196px 0;
+}
+
+.service-detail:nth-child(even) {
+  background-color: var(--color-background-alt);
+}
+
+.detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.detail-number {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  letter-spacing: 0.1em;
+  padding-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.detail-header-text {
+  flex: 1;
+}
+
+.detail-title {
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.detail-one-line {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+  max-width: 60ch;
+}
+
+.detail-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-subtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+}
+
+.detail-text {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-text-light);
+}
+
+.detail-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.detail-bullets li svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--color-accent);
+}
+
+.outcome-box {
+  background-color: rgba(0, 85, 212, 0.04);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1.25rem 1.5rem;
+}
+
+.outcome-text {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .detail-body {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .detail-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

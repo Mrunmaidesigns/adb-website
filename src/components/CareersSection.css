@@ -1,0 +1,39 @@
+.careers-section {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-xl) 0;
+}
+
+.careers-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.careers-section .section-title {
+  margin-bottom: var(--spacing-md);
+}
+
+.careers-text {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.careers-text:last-of-type {
+  margin-bottom: var(--spacing-md);
+}
+
+.careers-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+.careers-email:hover {
+  color: var(--color-accent-hover);
+}

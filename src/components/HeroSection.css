@@ -1,0 +1,112 @@
+.hero-section {
+  background-color: var(--color-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://cdn.prod.website-files.com/6667e1295d7fb05ba4fa34fe/68c7a1d507451968d96b5fcd_Home%20one%20hero%20image%20(2).avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 40%, var(--color-secondary) 100%);
+  opacity: 0.9;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 700px;
+  color: var(--color-text-white);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-content .heading-xl {
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.hero-subtext {
+  font-size: 1.1875rem;
+  line-height: 1.75;
+  color: #ffffff;
+  margin-bottom: var(--spacing-md);
+  max-width: 55ch;
+}
+
+.hero-support {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+.hero-cta-secondary {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 5rem;
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .hero-container {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .hero-subtext {
+    font-size: 1.0625rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+  }
+
+  .hero-cta,
+  .hero-cta-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}

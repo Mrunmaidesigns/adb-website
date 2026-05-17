@@ -1,0 +1,71 @@
+.strategic-hook {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.strategic-hook::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://cdn.prod.website-files.com/6667e1295d7fb05ba4fa34fe/68c7a1d507451968d96b5fcd_Home%20one%20hero%20image%20(2).avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.strategic-hook::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 40%, var(--color-secondary) 100%);
+  opacity: 0.7;
+}
+
+.hook-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.hook-line {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.02em;
+}
+
+.hook-line.highlight {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .strategic-hook {
+    min-height: 60vh;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hook-content {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .hook-line {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+  }
+}

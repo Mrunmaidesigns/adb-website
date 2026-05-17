@@ -1,0 +1,91 @@
+.our-approach {
+  background-color: var(--color-background);
+  padding: 196px 0;
+}
+
+.our-approach .section-title {
+  margin-bottom: var(--spacing-lg);
+}
+
+.approach-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.approach-timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 40px;
+  bottom: 40px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-border), rgba(0, 85, 212, 0.2), var(--color-border));
+}
+
+.approach-step {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-card-bg);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  flex-shrink: 0;
+  z-index: 1;
+  transition: all var(--transition-base);
+}
+
+.approach-step:hover .step-number {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.step-content {
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.step-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.step-description {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .approach-timeline::before {
+    left: 20px;
+  }
+
+  .step-number {
+    width: 42px;
+    height: 42px;
+    font-size: 0.8125rem;
+  }
+
+  .approach-step {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,76 @@
+.sample-work {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-xl) 0;
+}
+
+.sample-work .section-title {
+  margin-bottom: var(--spacing-lg);
+}
+
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.case-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-base);
+}
+
+.case-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.case-industry {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.case-challenge,
+.case-solution {
+  margin-bottom: 1rem;
+}
+
+.case-challenge:last-child,
+.case-solution:last-child {
+  margin-bottom: 0;
+}
+
+.case-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.375rem;
+}
+
+.challenge-label {
+  color: var(--color-text-light);
+}
+
+.solution-label {
+  color: var(--color-accent);
+}
+
+.case-text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cases-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+.who-we-work-with {
+  background-color: var(--color-background);
+  padding: var(--spacing-xl) 0;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-md);
+}
+
+.content-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.content-text:last-child {
+  margin-bottom: 0;
+}

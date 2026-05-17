@@ -1,0 +1,78 @@
+.connect-section {
+  background-color: var(--color-background);
+  padding: var(--spacing-xl) 0;
+}
+
+.connect-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.connect-section .section-title {
+  margin-bottom: var(--spacing-sm);
+}
+
+.connect-intro {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.connect-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.connect-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all var(--transition-base);
+}
+
+.connect-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(0, 85, 212, 0.15);
+}
+
+.connect-icon {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(0, 85, 212, 0.06);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.connect-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin-bottom: 0.375rem;
+}
+
+.connect-value {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+}
+
+.connect-value:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .connect-cards {
+    grid-template-columns: 1fr;
+  }
+}
